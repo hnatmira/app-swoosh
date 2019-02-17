@@ -15,5 +15,4 @@ class BorderButton: UIButton {
         layer.borderWidth = 3.0
         layer.borderColor = UIColor.white.cgColor
     }
-
 }
