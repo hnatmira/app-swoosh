@@ -130,6 +130,9 @@
                                         <state key="normal" title="Mens">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMensTapped:" destination="dSl-yG-irK" eventType="touchUpInside" id="WNr-Lb-svU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mre-rS-6OE" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="58" width="335" height="43"/>
@@ -138,6 +141,9 @@
                                         <state key="normal" title="Womens">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomensTapped:" destination="dSl-yG-irK" eventType="touchUpInside" id="NWD-7q-B2A"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FvO-wy-EIg" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="116" width="335" height="43"/>
@@ -146,17 +152,20 @@
                                         <state key="normal" title="Co-ed">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoedTapped:" destination="dSl-yG-irK" eventType="touchUpInside" id="Kds-O2-g4G"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OjE-Gg-Sll" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OjE-Gg-Sll" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                 <rect key="frame" x="20" y="597" width="335" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.39972174659999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="GxC-Rk-7Ml"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="22"/>
-                                <state key="normal" title="Next">
+                                <state key="normal" title="NEXT">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -196,6 +205,7 @@
                         <viewLayoutGuide key="safeArea" id="3Vy-AT-Jhd"/>
                     </view>
                     <connections>
+                        <outlet property="nextBtn" destination="OjE-Gg-Sll" id="bhy-eK-Z3x"/>
                         <segue destination="8c1-1H-iP8" kind="show" identifier="skillVCSeque" id="G1K-l5-b0k"/>
                     </connections>
                 </viewController>
@@ -262,7 +272,7 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="gMS-QJ-CMa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="22"/>
-                                <state key="normal" title="Next">
+                                <state key="normal" title="FINISH">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
